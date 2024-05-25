@@ -43,7 +43,7 @@ const ManageUsers = () => {
 
 
   return (
-    <div className='bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <div className='bg-gradient-to-r from-cyan-500 to-blue-500 pb-40'>
         <h1 className='text-3xl px-5 py-10'>Users </h1>
         <div className='max-w-[1200px] mx-auto py-[10px]'>
           <DataTable
@@ -53,6 +53,8 @@ const ManageUsers = () => {
           selectableRowsRadio
           />
       </div>
+      <div className='translate-x-[430px]'>
+        <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl text-slate-200 font-extrabold'>Edit Users Role</button></div>
     </div>
   )
 }

@@ -61,13 +61,13 @@ const [data,setData] =useState([{
 
 
   return (
-    <div className='bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <div className='bg-gradient-to-r from-cyan-500 to-blue-500 pb-52'>
       <h1 className='text-3xl px-5 py-10'>Patients Records</h1>
         <div className='max-w-[1200px] mx-auto py-[10px]'>
           <div className='flex gap-10 mb-3'>
-            <button className='px-5 py-2 bg-cyan-800 rounded-xl'>Add</button>
-            <button className='px-5 py-2 bg-cyan-800 rounded-xl'>Edit</button>
-            <button className='px-5 py-2 bg-cyan-800 rounded-xl'>Delete</button>
+            <button className='font-extrabold px-5 py-2 bg-cyan-600 rounded-xl text-slate-200'>Add</button>
+            <button className='font-extrabold px-5 py-2 bg-cyan-600 rounded-xl text-slate-200'>Edit</button>
+            <button className='font-extrabold px-5 py-2 bg-cyan-600 rounded-xl text-red-800'>Delete</button>
           </div>
           <DataTable
           columns={columns}

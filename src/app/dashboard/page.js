@@ -89,7 +89,7 @@ const Dashboard = () => {
               data={data1}
               options={options1}
             />
-            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl'>Generate report</button>
+            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl text-slate-200 font-extrabold'>Generate report</button>
             </div>
             <div className="p-2 flex flex-col">
                 <Chart
@@ -99,7 +99,7 @@ const Dashboard = () => {
                 data={data2}
                 options={options2}
                 />
-            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl'>Generate report</button>
+            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl text-slate-200 font-extrabold'>Generate report</button>
             </div>
             <div className="p-2 flex flex-col">
                 <Chart
@@ -109,7 +109,7 @@ const Dashboard = () => {
                 data={data3}
                 options={options3}
                 />
-            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl'>Generate report</button>
+            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl text-slate-200 font-extrabold'>Generate report</button>
             </div>
             <div className="p-2 flex flex-col">
             <Chart
@@ -119,7 +119,7 @@ const Dashboard = () => {
               width={"100%"}
               height={"400px"}
             />
-            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl'>Generate report</button>
+            <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl text-slate-200 font-extrabold'>Generate report</button>
           </div>
 
         </div>
