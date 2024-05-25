@@ -1,5 +1,7 @@
 "use client"
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'
+import Link from 'next/link';
 
 const signupin = () => {
   const [isSignedUp, setIsSignedUp] = useState(false);
@@ -30,13 +32,13 @@ const signupin = () => {
   };
 
   return (
-    <div>
+    <div className='bg-gradient-to-r from-cyan-500 to-emerald-500 pb-[700px]'>
       {isSignedUp ? (
-        <div>
-          <h2>Sign In</h2>
-          <form onSubmit={handleSignInSubmit}>
-            <div>
-              <label>National ID:</label>
+        <div className='flex flex-col justify-center items-center'>
+          <h2 className='font-extrabold text-5xl mt-10'>Sign In</h2>
+          <form onSubmit={handleSignInSubmit} className='text-2xl font-bold'>
+            <div className='mt-5 '>
+              <label className='mr-3'>National ID </label>
               <input
                 type="text"
                 value={nationalId}
@@ -44,8 +46,8 @@ const signupin = () => {
                 required
               />
             </div>
-            <div>
-              <label>Password:</label>
+            <div className='mt-5'>
+              <label className='mr-3'>Password </label>
               <input
                 type="password"
                 value={password}
@@ -53,16 +55,19 @@ const signupin = () => {
                 required
               />
             </div>
-            <button type="submit">Sign In</button>
-            <button type="submit" onClick={() => setIsSignedUp(false)}>Create Account</button>
+            <Link href='/'><button className='mt-5 bg-teal-700 p-4 rounded-2xl hover:bg-teal-300' type="submit">Sign In</button></Link>
+            <div className='mt-5'>
+              <span className='text-lg'>doesn't have an account?</span>
+              <button className='underline text-lg ml-3' type="submit" onClick={() => setIsSignedUp(false)}>Create Account</button>
+            </div>
           </form>
         </div>
       ) : (
-        <div>
-          <h2>Sign Up</h2>
-          <form onSubmit={handleSignUpSubmit}>
+        <div className='flex flex-col justify-center items-center'>
+          <h2 className='font-extrabold text-5xl mt-10 mb-10'>Sign Up</h2>
+          <form className='flex flex-col gap-5 text-xl font-bold' onSubmit={handleSignUpSubmit}>
             <div>
-              <label>National ID:</label>
+              <label className='mr-3'>National ID</label>
               <input
                 type="text"
                 value={nationalId}
@@ -71,7 +76,7 @@ const signupin = () => {
               />
             </div>
             <div>
-              <label>Username:</label>
+              <label className='mr-3'>Username</label>
               <input
                 type="text"
                 value={username}
@@ -80,7 +85,7 @@ const signupin = () => {
               />
             </div>
             <div>
-              <label>Password:</label>
+              <label className='mr-3'>Password</label>
               <input
                 type="password"
                 value={password}
@@ -89,7 +94,7 @@ const signupin = () => {
               />
             </div>
             <div>
-              <label>Confirm Password:</label>
+              <label className='mr-3'>Confirm Password</label>
               <input
                 type="password"
                 value={confirmPassword}
@@ -98,16 +103,15 @@ const signupin = () => {
               />
             </div>
             <div>
-              <label>Gender:</label>
+              <label className='mr-3'>Gender</label>
               <select value={gender} onChange={(e) => setGender(e.target.value)} required>
                 <option value="">Select Gender</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
-                <option value="other">Other</option>
               </select>
             </div>
             <div>
-              <label>Phone Number:</label>
+              <label className='mr-3'>Phone Number</label>
               <input
                 type="text"
                 value={phoneNumber}
@@ -115,8 +119,11 @@ const signupin = () => {
                 required
               />
             </div>
-            <button type="submit">Sign Up</button>
-            <button type="submit" onClick={() => setIsSignedUp(true)}>Already signed up?</button>
+            <Link href='/'><button className='mt-5 bg-teal-700 p-4 rounded-2xl hover:bg-teal-300' type="submit">Sign Up</button></Link>
+            <div>
+              <span className='text-lg'>Already signed up?</span>
+              <button className='underline text-lg ml-3' type="submit" onClick={() => setIsSignedUp(true)}>sign in</button>
+            </div>
           </form>
         </div>
       )}
