@@ -55,7 +55,7 @@ const signupin = () => {
                 required
               />
             </div>
-            <Link href='/'><button className='mt-5 bg-teal-700 p-4 rounded-2xl hover:bg-teal-300' type="submit">Sign In</button></Link>
+            <Link href='/patientInfo'><button className='mt-5 bg-teal-700 p-4 rounded-2xl hover:bg-teal-300' type="submit">Sign In</button></Link>
             <div className='mt-5'>
               <span className='text-lg'>doesn't have an account?</span>
               <button className='underline text-lg ml-3' type="submit" onClick={() => setIsSignedUp(false)}>Create Account</button>
@@ -119,7 +119,7 @@ const signupin = () => {
                 required
               />
             </div>
-            <Link href='/'><button className='mt-5 bg-teal-700 p-4 rounded-2xl hover:bg-teal-300' type="submit">Sign Up</button></Link>
+            <Link href='/patientInfo'><button className='mt-5 bg-teal-700 p-4 rounded-2xl hover:bg-teal-300' type="submit">Sign Up</button></Link>
             <div>
               <span className='text-lg'>Already signed up?</span>
               <button className='underline text-lg ml-3' type="submit" onClick={() => setIsSignedUp(true)}>sign in</button>
