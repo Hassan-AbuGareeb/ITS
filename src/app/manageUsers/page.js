@@ -43,9 +43,10 @@ const ManageUsers = () => {
 
 
   return (
-    <div className='bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <div className='bg-gradient-to-r from-cyan-500 to-blue-500 h-[1000px]'>
         <h1 className='text-3xl px-5 py-10'>Users </h1>
         <div className='max-w-[1200px] mx-auto py-[10px]'>
+        <button className='px-5 py-2 bg-cyan-800 rounded-xl mb-5'>Edit</button>
           <DataTable
           columns={columns}
           data= {data}

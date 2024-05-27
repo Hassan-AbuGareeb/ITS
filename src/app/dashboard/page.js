@@ -78,7 +78,7 @@ const Dashboard = () => {
       };
 
   return (
-    <div className='bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <div className='bg-gradient-to-r from-cyan-500 to-blue-500 h-[1000px]'>
         <h1 className='text-3xl px-5 py-10'>Dashboard</h1>
         <div className='w-full p-3 grid grid-cols-2 gap-4'>
             <div className="p-2 flex flex-col">
