@@ -42,7 +42,7 @@ const [data,setData] =useState([{
 
 
   return (
-    <div className='bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <div className='bg-gradient-to-r from-cyan-500 to-blue-500 h-[1000px]'>
       <h1 className='text-3xl px-5 py-10'>Patient Info</h1>
         <div className='max-w-[1200px] mx-auto py-[10px]'>
           <div className='flex flex-col gap-5 mb-10'>
