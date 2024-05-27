@@ -54,6 +54,8 @@ const ManageUsers = () => {
           selectableRowsRadio
           />
       </div>
+      <div className='translate-x-[430px]'>
+        <button className='self-end bg-cyan-600 py-2 px-5 mt-2 rounded-xl text-slate-200 font-extrabold'>Edit Users Role</button></div>
     </div>
   )
 }
